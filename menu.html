@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--Machine Problem 1-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Batangas Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <header class="iHeader innerHeader" id="iHeader">
+            <div class="headerInner">
+                <a href="index.html" class="navLogo">
+                    <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                </a>
+
+                <nav class="iNavi">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html" class="activeNav">Menu</a>
+                    <a href="gallery.html">Media Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="reviews.html">Reviews</a>
+                </nav>
+
+                <a href="#orderSection" class="orderBtn">
+                    <img src="assets/images/index/homeOrder.png" alt="Order Now">
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="menuShowcase" id="menuShowcase">
+                <img src="assets/images/menu/bgHNC.png" alt="Ham and Cheese Ingredients" class="menuBgImg">
+                <img src="assets/images/menu/bgHawaiian.png" alt="Hawaiian Ingredients" class="menuBgImg hiddenLayer">
+                <img src="assets/images/menu/bgBeefy.png" alt="Beefy Special Ingredients" class="menuBgImg hiddenLayer">
+                <img src="assets/images/menu/bgOverload.png" alt="Overload Ingredients" class="menuBgImg hiddenLayer">
+
+                <div class="menuStage">
+                    <h1 class="menuFlavorTitle" id="menuFlavorTitle">Ham and Cheese</h1>
+
+                    <div class="boardArea">
+                        <button type="button" class="menuArrowBtn leftMenuArrow" id="prevFlavorBtn" aria-label="Previous pizza flavor">&#8592;</button>
+
+                        <div class="boardCenter">
+                            <div class="speechBubbleWrap" id="speechBubbleWrap">
+                                <div class="speechBubbleBox" id="speechBubbleBox">
+                                    <p id="speechBubbleText">Sweet tomato sauce, melted cheese, and savory ham slices.</p>
+                                </div>
+                            </div>
+
+                            <div class="woodenBoardWrap">
+                                <img src="assets/images/menu/board.png" alt="Wooden Pizza Board" class="woodenBoardImg">
+                                <img src="assets/images/menu/hamNChiz.png" alt="Ham and Cheese Pizza" class="activePizzaImg">
+                                <img src="assets/images/menu/hawaiian.png" alt="Hawaiian Pizza" class="activePizzaImg hiddenLayer">
+                                <img src="assets/images/menu/beefySpecial.png" alt="Beefy Special Pizza" class="activePizzaImg hiddenLayer">
+                                <img src="assets/images/menu/overload.png" alt="Overload Pizza" class="activePizzaImg hiddenLayer">
+                            </div>
+                        </div>
+
+                        <button type="button" class="menuArrowBtn rightMenuArrow" id="nextFlavorBtn" aria-label="Next pizza flavor">&#8594;</button>
+                    </div>
+
+                    <div class="flavorMetaBar">
+                        <span class="flavorPriceTag" id="flavorPriceTag">₱104 Take-Home Box • ₱114 Regular</span>
+                        <div class="flavorDots">
+                            <button type="button" class="flavorDot activeDot" data-index="0">Ham &amp; Cheese</button>
+                            <button type="button" class="flavorDot" data-index="1">Hawaiian</button>
+                            <button type="button" class="flavorDot" data-index="2">Beefy Special</button>
+                            <button type="button" class="flavorDot" data-index="3">Overload</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="orderSection" id="orderSection">
+                <div class="orderContainer">
+                    <div class="orderSectionHeader">
+                        <h2 class="orderMainTitle">BUILD YOUR PASALUBONG STACK</h2>
+                        <p class="orderSubTitle">
+                            Select your pizza boxes below and pick them up fresh from the oven at your nearest stall.
+                        </p>
+                    </div>
+
+                    <div class="orderGrid">
+                        <div class="orderBuilderCard">
+                            <h3 class="cardHeading">1. Choose Your Pizza Boxes</h3>
+
+                            <div class="qtyRow">
+                                <div class="qtyInfo">
+                                    <h4>Ham and Cheese</h4>
+                                    <span>Sweet tomato sauce, melted cheese &amp; ham • ₱104 Take-Home</span>
+                                </div>
+                                <div class="qtyControls">
+                                    <button type="button" class="qtyBtn" id="minusHam">-</button>
+                                    <span class="qtyValue" id="qtyHam">1</span>
+                                    <button type="button" class="qtyBtn" id="plusHam">+</button>
+                                </div>
+                            </div>
+
+                            <div class="qtyRow">
+                                <div class="qtyInfo">
+                                    <h4>Hawaiian</h4>
+                                    <span>Sweet pineapple chunks, ham &amp; melted cheese • ₱109 Take-Home</span>
+                                </div>
+                                <div class="qtyControls">
+                                    <button type="button" class="qtyBtn" id="minusHaw">-</button>
+                                    <span class="qtyValue" id="qtyHaw">0</span>
+                                    <button type="button" class="qtyBtn" id="plusHaw">+</button>
+                                </div>
+                            </div>
+
+                            <div class="qtyRow">
+                                <div class="qtyInfo">
+                                    <h4>Beefy Special</h4>
+                                    <span>Seasoned ground beef, ham &amp; extra cheese • ₱109 Take-Home</span>
+                                </div>
+                                <div class="qtyControls">
+                                    <button type="button" class="qtyBtn" id="minusBeef">-</button>
+                                    <span class="qtyValue" id="qtyBeef">1</span>
+                                    <button type="button" class="qtyBtn" id="plusBeef">+</button>
+                                </div>
+                            </div>
+
+                            <div class="qtyRow">
+                                <div class="qtyInfo">
+                                    <h4>Overload</h4>
+                                    <span>Ham, beef, pineapple, mushrooms, bell pepper &amp; cheese • ₱109 Take-Home</span>
+                                </div>
+                                <div class="qtyControls">
+                                    <button type="button" class="qtyBtn" id="minusOver">-</button>
+                                    <span class="qtyValue" id="qtyOver">1</span>
+                                    <button type="button" class="qtyBtn" id="plusOver">+</button>
+                                </div>
+                            </div>
+
+                            <div class="addonGroup">
+                                <label class="checkLabel">
+                                    <input type="checkbox" id="takeHomeCheck" checked>
+                                    <span>Apply Take-Home Pasalubong Promo (Save ₱10 per box)</span>
+                                </label>
+                                <label class="checkLabel">
+                                    <input type="checkbox" id="extraCheeseCheck">
+                                    <span>Add Extra Quick-Melt Cheese (+₱15 per box)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="orderSummaryCard">
+                            <h3 class="cardHeading">2. Order Summary &amp; Pickup</h3>
+
+                            <div class="receiptBox" id="cartLines"></div>
+
+                            <div class="totalBanner">
+                                <span>Total:</span>
+                                <strong id="cartTotal">₱322.00</strong>
+                            </div>
+
+                            <form id="orderCheckoutForm" class="checkoutForm">
+                                <div class="inputRow">
+                                    <div class="inputGroup">
+                                        <label for="orderName">Your Name</label>
+                                        <input type="text" id="orderName" placeholder="e.g. Juan Dela Cruz">
+                                    </div>
+                                    <div class="inputGroup">
+                                        <label for="orderPhone">Mobile Number</label>
+                                        <input type="tel" id="orderPhone" placeholder="e.g. 0917 123 4567">
+                                    </div>
+                                </div>
+
+                                <div class="inputGroup">
+                                    <label for="orderBranch">Select Pickup Stall Branch</label>
+                                    <select id="orderBranch">
+                                        <option value="J. Pastor St, Poblacion, Ibaan, Batangas">J. Pastor St, Poblacion, Ibaan, Batangas</option>
+                                        <option value="Citimart Lower Ground, Rosario, Batangas">Citimart Lower Ground, Rosario, Batangas</option>
+                                        <option value="Purok 1 Bolbok, Batangas City">Purok 1 Bolbok, Batangas City</option>
+                                        <option value="Lower Ground, Citimart Shop On, Caedo, Batangas City">Lower Ground, Citimart Shop On, Caedo, Batangas City</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="submitGoldBtn">Place Order</button>
+                                <p class="feedbackMsg" id="orderFeedback"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="inquirySection" id="inquirySection">
+                <div class="inquiryContainer">
+                    <div class="stallBanner">
+                        <h2>BULK &amp; PARTY STACK INQUIRY.</h2>
+                    </div>
+
+                    <p class="stallDesc">
+                        Planning a birthday celebration, class party, or office meryenda? Send us an inquiry ahead of time!
+                    </p>
+
+                    <div class="inquiryCard">
+                        <form id="bulkInquiryForm" class="inquiryForm">
+                            <div class="inputRow">
+                                <div class="inputGroup">
+                                    <label for="inqName">Full Name</label>
+                                    <input type="text" id="inqName" placeholder="Enter your full name">
+                                </div>
+                                <div class="inputGroup">
+                                    <label for="inqPhone">Contact Number</label>
+                                    <input type="tel" id="inqPhone" placeholder="09XX XXX XXXX">
+                                </div>
+                            </div>
+
+                            <div class="inputRow">
+                                <div class="inputGroup">
+                                    <label for="inqBranch">Preferred Stall Location</label>
+                                    <select id="inqBranch">
+                                        <option value="J. Pastor St, Poblacion, Ibaan, Batangas">J. Pastor St, Poblacion, Ibaan, Batangas</option>
+                                        <option value="Citimart Lower Ground, Rosario, Batangas">Citimart Lower Ground, Rosario, Batangas</option>
+                                        <option value="Purok 1 Bolbok, Batangas City">Purok 1 Bolbok, Batangas City</option>
+                                        <option value="Lower Ground, Citimart Shop On, Caedo, Batangas City">Lower Ground, Citimart Shop On, Caedo, Batangas City</option>
+                                    </select>
+                                </div>
+                                <div class="inputGroup">
+                                    <label for="inqBoxes">Estimated Number of Boxes</label>
+                                    <input type="number" id="inqBoxes" min="5" value="10" placeholder="e.g. 10">
+                                </div>
+                            </div>
+
+                            <div class="inputGroup">
+                                <label for="inqMessage">Flavor Breakdown &amp; Pickup Time Notes</label>
+                                <textarea id="inqMessage" rows="4" placeholder="Tell us which flavors you want and what time you will pass by the stall..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submitRedBtn">Send Inquiry</button>
+                            <p class="feedbackMsg" id="inqFeedback"></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="iFooter">
+            <div class="footerTop">
+                <div class="footerBrand">
+                    <div class="branding">
+                        <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                        <div class="bText">
+                            <span class="estText">1ST SINCE 1993</span>
+                            <span class="bName"><em>Batangas</em> PIZZA</span>
+                        </div>
+                    </div>
+                    <p class="footerTagline">
+                        Serving affordable, freshly baked take-home pizza boxes in Batangas since 1993. Drop by our neighborhood stalls for a quick snack or pasalubong for the family.
+                    </p>
+                </div>
+            </div>
+
+            <div class="apaBox">
+                <h4>References</h4>
+                <ul class="apaList">
+                    <li>Canva. (2026). <em>Wooden board, floating pizza ingredient illustrations, and graphic elements</em> [Design elements]. Canva Media Library. <a href="https://www.canva.com/" target="_blank">https://www.canva.com/</a></li>
+                    <li>Foodpanda Philippines. (2024). <em>Batangas Pizza menu flavors and product photographs</em> [Photographs]. Foodpanda. <a href="https://www.foodpanda.ph/chain/cm1um/batangas-pizza" target="_blank">https://www.foodpanda.ph/chain/cm1um/batangas-pizza</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <span>© 1993–2026 D' Original Batangas Pizza. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </body>
+</html>

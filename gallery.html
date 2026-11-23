@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--Machine Problem 1-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Gallery - Batangas Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <header class="iHeader innerHeader" id="iHeader">
+            <div class="headerInner">
+                <a href="index.html" class="navLogo">
+                    <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                </a>
+
+                <nav class="iNavi">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html" class="activeNav">Media Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="reviews.html">Reviews</a>
+                </nav>
+
+                <a href="menu.html#orderSection" class="orderBtn">
+                    <img src="assets/images/index/homeOrder.png" alt="Order Now">
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="gallerySection" id="gallerySection">
+                <div class="galleryContainer">
+                    <div class="galleryHeroHeader">
+                        <h1 class="galleryTitle">THE BOXES WE GREW UP WITH</h1>
+                        <p class="gallerySubtitle">
+                            Real photos of the pizzas, straw-tied stacks, and neighborhood stalls that Batangueños grew up with. Tap any picture to view it full screen.
+                        </p>
+
+                        <div class="galleryFilterBar">
+                            <button type="button" class="galleryFilterBtn activeFilter" data-filter="all">
+                                <img src="assets/images/gallery/allPhotos.png" alt="All Photos">
+                            </button>
+                            <button type="button" class="galleryFilterBtn" data-filter="pizzas">
+                                <img src="assets/images/gallery/pizzaIcon.png" alt="Pizzas">
+                            </button>
+                            <button type="button" class="galleryFilterBtn" data-filter="stacks">
+                                <img src="assets/images/gallery/stackIcon.png" alt="Stacks">
+                            </button>
+                            <button type="button" class="galleryFilterBtn" data-filter="posters">
+                                <img src="assets/images/gallery/posterIcon.png" alt="Posters">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="galleryGrid" id="galleryGrid">
+                        <!--pizza categ-->
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/pizzas/display1.jpeg" alt="Classic Batangas Pizza Box and Slices">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Classic Pasalubong Box &amp; Slices</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/pizzas/display6.jpg" alt="Sweet Tomato Sauce and Melted Cheese Slices">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Sweet Tomato Sauce &amp; Melted Cheese</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/pizzas/display7.jpg" alt="Batangas Pizza Drizzled with Sweet-Spicy Hot Sauce">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Drizzled with Sweet-Spicy Hot Sauce</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/pizzas/display9.jpg" alt="Freshly Baked Batangas Pizza with Tied Hot Sauce Pouch">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>With Tied Hot Sauce Plastic Pouch</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/menu/hamNChiz.png" alt="Ham and Cheese Pizza">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Ham and Cheese</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/menu/hawaiian.png" alt="Hawaiian Pizza">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Hawaiian</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/menu/beefySpecial.png" alt="Beefy Special Pizza">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Beefy Special</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="pizzas">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/menu/overload.png" alt="Hawaiian Overload Pizza">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Hawaiian Overload</h3>
+                                <span>Pizzas</span>
+                            </div>
+                        </div>
+
+                        <!--stacks-->
+                        <div class="galleryItem" data-category="stacks">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/stacks/display2.jpg" alt="10-Box Straw-Tied Pasalubong Towers">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>10-Box Straw-Tied Pasalubong Towers</h3>
+                                <span>Stacks</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="stacks">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/stacks/display3.jpg" alt="White Batangas Pizza Take-Home Box Stacks">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Take-Home Pasalubong Box Stacks</h3>
+                                <span>Stacks</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="stacks">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/index/h2pizza3.png" alt="Freshly Baked Batangas Pizza in Take-Home Box">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Fresh Out of the Stall Oven</h3>
+                                <span>Stacks</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="stacks">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/index/h3stall2.png" alt="Pasalubong Box Towers at the Stall">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Pasalubong Box Towers at the Stall</h3>
+                                <span>Stacks</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="stacks">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/contact/stall2.jpeg" alt="Citimart Rosario Opening Stall Stack">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Citimart Rosario Stall Box Stack</h3>
+                                <span>Stacks</span>
+                            </div>
+                        </div>
+
+                        <!--posters-->
+                        <div class="galleryItem" data-category="posters">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/posters/menu1.jpeg" alt="Take Home Promo and Regular Menu Poster">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Take-Home Promo &amp; Regular Menu</h3>
+                                <span>Posters</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="posters">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/posters/menu2.jpeg" alt="Quezon Residences 3 Stall Menu Poster">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Quezon Residences 3 Stall Menu</h3>
+                                <span>Posters</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="posters">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/gallery/posters/menu3.jpg" alt="Balete Batangas 9-Inch Original Menu Poster">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Balete Batangas 9-Inch Menu Poster</h3>
+                                <span>Posters</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="posters">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/index/h3stall1.png" alt="Neighborhood Stall Menu Tarpaulin">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Neighborhood Stall Menu Tarpaulin</h3>
+                                <span>Posters</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="posters">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/index/h3stall3.jpg" alt="Purok 1 Bolbok Batangas City Stall">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Purok 1 Bolbok Stall Tarpaulin</h3>
+                                <span>Posters</span>
+                            </div>
+                        </div>
+
+                        <div class="galleryItem" data-category="stacks">
+                            <div class="galleryImgWrap">
+                                <img src="assets/images/index/h3stall4.jpg" alt="Lower Ground Citimart Shop On Caedo Stall">
+                            </div>
+                            <div class="galleryCaption">
+                                <h3>Citimart Shop On Caedo Stall</h3>
+                                <span>Stacks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="lightboxModal hiddenModal" id="lightboxModal">
+                <button type="button" class="lightboxCloseBtn" id="lightboxCloseBtn" aria-label="Close full screen view">&times;</button>
+                <button type="button" class="lightboxNavBtn lightboxPrevBtn" id="lightboxPrevBtn" aria-label="Previous photo">&#8592;</button>
+
+                <div class="lightboxInner">
+                    <div class="lightboxFrame">
+                        <img src="assets/images/gallery/pizzas/display1.jpeg" alt="Full Screen Preview" id="lightboxImg">
+                    </div>
+                    <p class="lightboxText" id="lightboxText">Classic Pasalubong Box &amp; Slices</p>
+                </div>
+
+                <button type="button" class="lightboxNavBtn lightboxNextBtn" id="lightboxNextBtn" aria-label="Next photo">&#8594;</button>
+            </div>
+
+        </main>
+
+        <footer class="iFooter">
+            <div class="footerTop">
+                <div class="footerBrand">
+                    <div class="branding">
+                        <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                        <div class="bText">
+                            <span class="estText">1ST SINCE 1993</span>
+                            <span class="bName"><em>Batangas</em> PIZZA</span>
+                        </div>
+                    </div>
+                    <p class="footerTagline">
+                        Serving affordable, freshly baked take-home pizza boxes in Batangas since 1993. Drop by our neighborhood stalls for a quick snack or pasalubong for the family.
+                    </p>
+                </div>
+            </div>
+
+            <div class="apaBox">
+                <h4>References</h4>
+                <ul class="apaList">
+                    <li>Batangas Pizza. (2023, December 15). <em>Batangas Pizza is now available at the newly opened Citimart Rosario Branch</em> [Photograph]. Facebook. <a href="https://www.facebook.com/photo/?fbid=758303229651366&amp;set=a.455400019941690" target="_blank">https://www.facebook.com/photo/?fbid=758303229651366&amp;set=a.455400019941690</a></li>
+                    <li>Batangas Pizza. (2024). <em>D' Original Batangas Pizza take-home box and slices</em> [Photograph]. Instagram. <a href="https://www.instagram.com/p/DWxX2qAkwmK/" target="_blank">https://www.instagram.com/p/DWxX2qAkwmK/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Freshly baked Batangas Pizza stall and stack photographs</em> [Photographs]. Facebook. <a href="https://www.facebook.com/share/1R7xhu6Tmj/" target="_blank">https://www.facebook.com/share/1R7xhu6Tmj/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Pasalubong pizza boxes and toppings close-up</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1EKmai5L4g/" target="_blank">https://www.facebook.com/share/p/1EKmai5L4g/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Straw-tied Batangas Pizza pasalubong box towers</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/19jd4VuTHN/" target="_blank">https://www.facebook.com/share/p/19jd4VuTHN/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Take-home Batangas Pizza community post and menu</em> [Photograph]. Facebook. <a href="https://www.facebook.com/groups/398313971385541/posts/1738019867414938/" target="_blank">https://www.facebook.com/groups/398313971385541/posts/1738019867414938/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Traditional neighborhood pizza stall and boxes</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1CVHUSDzus/" target="_blank">https://www.facebook.com/share/p/1CVHUSDzus/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Freshly baked Batangas Pizza stall feature</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1APJakfeQc/" target="_blank">https://www.facebook.com/share/p/1APJakfeQc/</a></li>
+                    <li>Batangas Pizza Balete Batangas. (2024). <em>Pizza lovers tara na! Batangas Pizza ang classic favorite ng lahat</em> [Poster]. Facebook. <a href="https://www.facebook.com/batangaspizzabaletebatangas/posts/%F0%9D%91%B7%F0%9D%92%8A%F0%9D%92%9B%F0%9D%92%9B%F0%9D%92%82-%F0%9D%91%B3%F0%9D%92%90%F0%9D%92%97%F0%9D%92%86%F0%9D%92%93%F0%9D%92%94-%F0%9D%91%BB%F0%9D%92%82%F0%9D%92%93%F0%9D%92%82-%F0%9D%91%B5%F0%9D%92%82batangas-pizza-ang-classic-favorite-ng-lahat-available-na-ul/122109886664497914/" target="_blank">https://www.facebook.com/batangaspizzabaletebatangas/posts/122109886664497914/</a></li>
+                    <li>Batangas Pizza Poblacion San Pascual. (2023). <em>Available po mamaya 1:00PM–6:00PM sa may tabi ng Kkopi.Tea Brgy. Poblacion San Pascual</em> [Photographs]. Facebook. <a href="https://www.facebook.com/batangaspizzasp/posts/available-po-mamaya-100pm-600pm-sa-may-tabi-ng-kkopitea-brgy-poblacion-san-pascu/178362521986055/" target="_blank">https://www.facebook.com/batangaspizzasp/posts/available-po-mamaya-100pm-600pm-sa-may-tabi-ng-kkopitea-brgy-poblacion-san-pascu/178362521986055/</a></li>
+                    <li>Canva. (2026). <em>Category filter icons and graphic elements</em> [Design elements]. Canva Media Library. <a href="https://www.canva.com/" target="_blank">https://www.canva.com/</a></li>
+                    <li>D' Original Batangas Pizza - Ibaan. (2025, August 8). <em>J. Pastor St. Poblacion Ibaan Batangas stall</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1A72hw8Rar/" target="_blank">https://www.facebook.com/share/p/1A72hw8Rar/</a></li>
+                    <li>Foodpanda Philippines. (2024). <em>Batangas Pizza menu and product listings</em> [Photographs]. Foodpanda. <a href="https://www.foodpanda.ph/chain/cm1um/batangas-pizza" target="_blank">https://www.foodpanda.ph/chain/cm1um/batangas-pizza</a></li>
+                    <li>RideMyJeep. (2021). <em>Family and fantasy: Batangas Pizza take-home box</em> [Photograph]. RideMyJeep. <a href="https://www.ridemyjeep.com/family-and-fantasy/" target="_blank">https://www.ridemyjeep.com/family-and-fantasy/</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <span>© 1993–2026 D' Original Batangas Pizza. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--Machine Problem 1-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Batangas Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src= "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <header class="iHeader" id="iHeader">
+            <div class="headerInner">
+                <a href="index.html" class="navLogo">
+                    <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                </a>
+
+                <nav class="iNavi">
+                    <a href="index.html" class="activeNav">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html">Media Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="reviews.html">Reviews</a>
+                </nav>
+
+                <a href="menu.html" class="orderBtn">
+                    <img src="assets/images/index/homeOrder.png" alt= "Order Now">
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="heroSection">
+                <video class="heroVideo" autoplay muted loop playsinline>
+                    <source src="assets/images/index/homeBg1.mp4" type= "video/mp4">
+                </video>
+                <div class="heroOverlay"></div>
+
+                <div class="heroContent">
+                    <div class="heroLeft">
+                        <img src="assets/images/index/homeEst.png" alt= "Est. 1993 Take Home Delicious" class="estImg" id="estImg">
+                        <div class="batsWrap" id="batsWrap">
+                            <img src="assets/images/index/homeBats.png" alt="Batangas" class="batsImg" id="batsImg">
+                        </div>
+                        <img src="assets/images/index/homePizza.png" alt="Pizza" class="pizzaImg" id="pizzaImg">
+                    </div>
+
+                    <div class="heroRight">
+                        <img src="assets/images/index/homeThree.png" alt="Three Batangas Pizzas on Wooden Boards" class="threePizzas" id="threePizzas">
+                    </div>
+                </div>
+            </section>
+
+            <section class="taraSection" id="taraSection">
+                <div class="taraContainer">
+                    <div class="taraLeft">
+                        <div class="taraHeader" id="taraHeader">
+                            <img src="assets/images/index/h2Chef.png" alt="Batangas Pizza Chef Mascot" class="chefImg">
+                            <h2 class="taraCssTitle">TARA PIZZA<br>BREAK MUNA!</h2>
+                        </div>
+
+                        <div class="taraBannerBox" id="taraBannerBox">
+                            <p>
+                                For over three decades, the Batangueños have consistently brought home a family favorite pasalubong: the Batangas Pizza. A classic sweet-style pizza loaded with savory toppings and melted cheese. It’s a local classic that remains a staple at every family table.
+                            </p>
+                        </div>
+
+                        <div class="taraPhotosRow" id="taraPhotosRow">
+                            <div class="taraPhotoBox">
+                                <img src="assets/images/index/h2pizza1.png" alt="Batangas Pizza Box and Slices">
+                            </div>
+                            <div class="taraPhotoBox">
+                                <img src="assets/images/index/h2pizza2.png" alt="Close-up of Batangas Pizza with Sweet Sauce">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="taraRight">
+                        <div class="storyCardTop" id="storyCardTop">
+                            <div class="storyTopImgWrap">
+                                <img src="assets/images/index/h2pizza3.png" alt="Freshly Baked Batangas Pizza in Box">
+                            </div>
+                            <p>
+                                Batangas Pizza started in 1993 as a small stall on D. Silang Street. People stopped by after grocery shopping at Citimart and took a box home to the family. Cheap, fast, and easy to carry.
+                            </p>
+                        </div>
+
+                        <div class="storyCardBot" id="storyCardBot">
+                            <p>
+                                Our bakers made a recipe for Filipino tastes: sweet tomato sauce and soft bread dough. One stand on D. Silang Street grew into stalls in Poblacion, San Pascual, and Quezon Residences 3. Place your order and your pizza goes straight into the oven.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stallSection">
+                <div class="awningStrip">
+                    <img src="assets/images/index/h3Store.png" alt="Scalloped Stall Awning">
+                </div>
+
+                <div class="stallContent">
+                    <div class="stallBanner">
+                        <h2>SOLD ONLY AT OUR STALLS.</h2>
+                    </div>
+
+                    <p class="stallDesc">
+                        There are no dine-in restaurants for Batangas Pizza. Right from 1993 up to now, we only sell from small stalls where you buy a box and bring it home as pasalubong or as an afternoon snack.
+                    </p>
+
+                    <div class= "stallCarousel">
+                        <button type="button" class="arrowBtn" id="prevStallBtn" aria-label="Previous stall photo">&#8592;</button>
+
+                        <div class= "stallFrame">
+                            <img src="assets/images/index/h3stall1.png" alt="Batangas Pizza Stall 1" class="stallSlideImg">
+                            <img src="assets/images/index/h3stall2.png" alt="Batangas Pizza Stall 2" class="stallSlideImg hiddenLayer">
+                            <img src="assets/images/index/h3stall3.jpg" alt="Batangas Pizza Stall 3" class="stallSlideImg hiddenLayer">
+                            <img src="assets/images/index/h3stall4.jpg" alt="Batangas Pizza Stall 4" class="stallSlideImg hiddenLayer">
+                        </div>
+
+                        <button type= "button" class="arrowBtn" id="nextStallBtn" aria-label="Next stall photo">&#8594;</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class= "deviceSection" id="deviceSection">
+                <a href="menu.html" class="buyNowLink" id="buyNowLink">
+                    <img src="assets/images/index/h4Buy.png" alt="Buy Now" class="buyNowImg">
+                </a>
+
+                <div class="deviceContainer">
+                    <h2 class="deviceTitle" id="deviceTitle">AVAILABLE ON ANY DEVICE</h2>
+
+                    <div class="deviceWrap" id="deviceWrap">
+                        <img src="assets/images/index/h4Devices.png" alt="Batangas Pizza on Tablet, Phone, and Laptop" class="deviceImg" id="deviceImg">
+                    </div>
+
+                    <p class="deviceCaption" id="deviceCaption">Browse the menu and order from any screen!</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="iFooter">
+            <div class="footerTop">
+                <div class="footerBrand">
+                    <div class="branding">
+                        <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                        <div class="bText">
+                            <span class="estText">1ST SINCE 1993</span>
+                            <span class="bName"><em>Batangas</em> PIZZA</span>
+                        </div>
+                    </div>
+                    <p class="footerTagline">
+                        Serving affordable, freshly baked take-home pizza boxes in Batangas since 1993. Drop by our neighborhood stalls for a quick snack or pasalubong for the family.
+                    </p>
+                </div>
+            </div>
+
+            <div class="apaBox">
+                <h4>References</h4>
+                <ul class="apaList">
+                    <li>Batangas Pizza. (2024). <em>Batangas Pizza stall and product photograph</em> [Photograph]. Facebook. <a href="https://www.facebook.com/photo/?fbid=1535957975212537&amp;set=a.471373851670960" target="_blank">https://www.facebook.com/photo/?fbid=1535957975212537&amp;set=a.471373851670960</a></li>
+                    <li>Batangas Pizza. (2024). <em>D' Original Batangas Pizza take-home box and slices</em> [Photograph]. Instagram. <a href="https://www.instagram.com/p/DWxX2qAkwmK/" target="_blank">https://www.instagram.com/p/DWxX2qAkwmK/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Freshly baked Batangas Pizza stall feature</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1APJakfeQc/" target="_blank">https://www.facebook.com/share/p/1APJakfeQc/</a></li>
+                    <li>Batangas Pizza. (2024). <em>Traditional neighborhood pizza stall and boxes</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1CVHUSDzus/" target="_blank">https://www.facebook.com/share/p/1CVHUSDzus/</a></li>
+                    <li>Batangas Pizza Poblacion San Pascual. (2023). <em>Available po mamaya 1:00PM–6:00PM sa may tabi ng Kkopi.Tea Brgy. Poblacion San Pascual</em> [Photographs]. Facebook. <a href="https://www.facebook.com/batangaspizzasp/posts/available-po-mamaya-100pm-600pm-sa-may-tabi-ng-kkopitea-brgy-poblacion-san-pascu/178362521986055/" target="_blank">https://www.facebook.com/batangaspizzasp/posts/available-po-mamaya-100pm-600pm-sa-may-tabi-ng-kkopitea-brgy-poblacion-san-pascu/178362521986055/</a></li>
+                    <li>Canva. (2026). <em>Graphic elements, typography, and background video assets</em> [Design elements and stock video]. Canva Media Library. <a href="https://www.canva.com/" target="_blank">https://www.canva.com/</a></li>
+                    <li>D' Original Batangas Pizza - Ibaan. (2025, August 8). <em>J. Pastor St. Poblacion Ibaan Batangas stall</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1A72hw8Rar/" target="_blank">https://www.facebook.com/share/p/1A72hw8Rar/</a></li>
+                    <li>Foodpanda Philippines. (2024). <em>Batangas Pizza menu and product listings</em> [Photographs]. Foodpanda. <a href="https://www.foodpanda.ph/chain/cm1um/batangas-pizza" target="_blank">https://www.foodpanda.ph/chain/cm1um/batangas-pizza</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <span>© 1993–2026 D' Original Batangas Pizza. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </body>
+</html>

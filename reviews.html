@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--Machine Problem 1-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reviews - Batangas Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <header class="iHeader" id="iHeader">
+            <div class="headerInner">
+                <a href="index.html" class="navLogo">
+                    <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                </a>
+
+                <nav class="iNavi">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html">Media Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="reviews.html" class="activeNav">Reviews</a>
+                </nav>
+
+                <a href="menu.html#orderSection" class="orderBtn">
+                    <img src="assets/images/index/homeOrder.png" alt="Order Now">
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="reviewHeroSection">
+                <video class="heroVideo" autoplay muted loop playsinline>
+                    <source src="assets/images/review/reviewBg.mp4" type="video/mp4">
+                </video>
+                <div class="reviewHeroOverlay"></div>
+
+                <div class="reviewHeroContent" id="reviewHeroContent">
+                    <img src="assets/images/index/h2Chef.png" alt="Batangas Pizza Chef Mascot" class="reviewHeroChef">
+                    <h1 class="reviewHeroTitle">SHARE YOUR THOUGHTS<br>WITH US!</h1>
+                </div>
+            </section>
+
+            <section class="reviewMainSection" id="reviewMainSection">
+                <div class="reviewContainer">
+                    <div class="ratingSummaryCard">
+                        <div class="ratingBarsCol">
+                            <div class="ratingBarRow">
+                                <span class="barLabel">FIVE</span>
+                                <span class="barStar">&#9733;</span>
+                                <div class="barTrack"><div class="barFill barFive" id="barFive"></div></div>
+                                <span class="barCount" id="countFive">84</span>
+                            </div>
+                            <div class="ratingBarRow">
+                                <span class="barLabel">FOUR</span>
+                                <span class="barStar">&#9733;</span>
+                                <div class="barTrack"><div class="barFill barFour" id="barFour"></div></div>
+                                <span class="barCount" id="countFour">18</span>
+                            </div>
+                            <div class="ratingBarRow">
+                                <span class="barLabel">THREE</span>
+                                <span class="barStar">&#9733;</span>
+                                <div class="barTrack"><div class="barFill barThree" id="barThree"></div></div>
+                                <span class="barCount" id="countThree">5</span>
+                            </div>
+                            <div class="ratingBarRow">
+                                <span class="barLabel">TWO</span>
+                                <span class="barStar">&#9733;</span>
+                                <div class="barTrack"><div class="barFill barTwo" id="barTwo"></div></div>
+                                <span class="barCount" id="countTwo">1</span>
+                            </div>
+                            <div class="ratingBarRow">
+                                <span class="barLabel">ONE</span>
+                                <span class="barStar">&#9733;</span>
+                                <div class="barTrack"><div class="barFill barOne" id="barOne"></div></div>
+                                <span class="barCount" id="countOne">0</span>
+                            </div>
+                        </div>
+
+                        <div class="overallScoreBox">
+                            <div class="overallScoreNum" id="overallScoreNum">4.7</div>
+                            <div class="overallStars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="overallCount" id="overallCount">108 Ratings</div>
+                        </div>
+                    </div>
+
+                    <div class="reviewTwoCol">
+                        <div class="feedbackListCol">
+                            <h2 class="reviewColTitle">Recent Feedbacks</h2>
+
+                            <div class="feedbackCardsWrap" id="feedbackCardsWrap">
+                                <div class="feedbackCard">
+                                    <div class="feedbackHeader">
+                                        <div class="feedbackAuthorWrap">
+                                            <strong class="feedbackUser">OldTelephone2238 • 1y ago</strong>
+                                        </div>
+                                        <span class="feedbackStars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </div>
+                                    <p class="feedbackBody">
+                                        nung bata ako, palagi kami nabili niyan after mamili ng mama ko ng grocery para sa tindahan sa citimart lemery. mura lang pero masarap pa rin. hindi ko lang alam kung meron pa niyan doon kasi hindi na ko nakatira sa batangas.
+                                    </p>
+                                </div>
+
+                                <div class="feedbackCard">
+                                    <div class="feedbackHeader">
+                                        <div class="feedbackAuthorWrap">
+                                            <strong class="feedbackUser">KeyboardWarrior1984 • 1y ago</strong>
+                                        </div>
+                                        <span class="feedbackStars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </div>
+                                    <p class="feedbackBody">
+                                        Kaya kong umubos ng isang kahon mag-isa.
+                                    </p>
+                                </div>
+
+                                <div class="feedbackCard">
+                                    <div class="feedbackHeader">
+                                        <div class="feedbackAuthorWrap">
+                                            <strong class="feedbackUser">Tiniwini500k • 1y ago</strong>
+                                        </div>
+                                        <span class="feedbackStars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                                    </div>
+                                    <p class="feedbackBody">
+                                        Childhood pizzaaaa!! Pero iba na ang mga bata ngayon. Nag-uwi yung nanay ko ng Batangas Pizza isang beses, tapos sabi ng pamangkin kong 7yo wag daw kainin kasi daw para daw “the pizza is like pizza from shein or temu” Hahahaha
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addReviewCol">
+                            <h2 class="reviewColTitle">Add a Review</h2>
+
+                            <form id="addReviewForm" class="addReviewCard">
+                                <div class="inputGroup">
+                                    <label>Add Your Rating *</label>
+                                    <div class="starPicker" id="starPicker">
+                                        <button type="button" class="pickStarBtn selectedStar" data-rating="1">&#9733;</button>
+                                        <button type="button" class="pickStarBtn selectedStar" data-rating="2">&#9733;</button>
+                                        <button type="button" class="pickStarBtn selectedStar" data-rating="3">&#9733;</button>
+                                        <button type="button" class="pickStarBtn selectedStar" data-rating="4">&#9733;</button>
+                                        <button type="button" class="pickStarBtn selectedStar" data-rating="5">&#9733;</button>
+                                    </div>
+                                </div>
+
+                                <div class="inputGroup">
+                                    <label for="reviewName">Name *</label>
+                                    <input type="text" id="reviewName" placeholder="e.g. Juan Dela Cruz">
+                                </div>
+
+                                <div class="inputGroup">
+                                    <label for="reviewBranch">Branch *</label>
+                                    <select id="reviewBranch">
+                                        <option value="J. Pastor St, Poblacion, Ibaan, Batangas">J. Pastor St, Poblacion, Ibaan, Batangas</option>
+                                        <option value="Citimart Lower Ground, Rosario, Batangas">Citimart Lower Ground, Rosario, Batangas</option>
+                                        <option value="Purok 1 Bolbok, Batangas City">Purok 1 Bolbok, Batangas City</option>
+                                        <option value="Lower Ground, Citimart Shop On, Caedo, Batangas City">Lower Ground, Citimart Shop On, Caedo, Batangas City</option>
+                                    </select>
+                                </div>
+
+                                <div class="inputGroup">
+                                    <label for="reviewComment">Write Your Review *</label>
+                                    <textarea id="reviewComment" rows="5" placeholder="Write here..."></textarea>
+                                </div>
+
+                                <button type="submit" class="submitGoldBtn">Submit</button>
+                                <p class="feedbackMsg reviewFormMsg" id="reviewFormMsg"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="iFooter">
+            <div class="footerTop">
+                <div class=" footerBrand">
+                    <div class="branding">
+                        <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                        <div class="bText">
+                            <span class="estText">1ST SINCE 1993</span>
+                            <span class="bName"><em>Batangas</em> PIZZA</span>
+                        </div>
+                    </div>
+                    <p class="footerTagline">
+                        Serving affordable, freshly baked take-home pizza boxes in Batangas since 1993. Drop by our neighborhood stalls for a quick snack or pasalubong for the family.
+                    </p>
+                </div>
+            </div>
+
+            <div class="apaBox">
+                <h4>References</h4>
+                <ul class="apaList">
+                    <li>Canva. (2026). <em>Graphic elements, chef illustration, and background video loop</em> [Design elements and stock video]. Canva Media Library. <a href="https://www.canva.com/" target="_blank">https://www.canva.com/</a></li>
+                    <li>r/Batangas. (2025). <em>Batangas Pizza</em> [Online forum thread]. Reddit. <a href="https://www.reddit.com/r/Batangas/comments/1nmokoe/batangas_pizza/" target="_blank">https://www.reddit.com/r/Batangas/comments/1nmokoe/batangas_pizza/</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <span>© 1993–2026 D' Original Batangas Pizza. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </body>
+</html>

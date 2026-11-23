@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--Machine Problem 1-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Batangas Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <header class="iHeader" id="iHeader">
+            <div class="headerInner">
+                <a href="index.html" class="navLogo">
+                    <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                </a>
+
+                <nav class="iNavi">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html">Media Gallery</a>
+                    <a href="contact.html" class="activeNav">Contact Us</a>
+                    <a href="reviews.html">Reviews</a>
+                </nav>
+
+                <a href="menu.html#orderSection" class="orderBtn">
+                    <img src="assets/images/index/homeOrder.png" alt="Order Now">
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="contactHeroSection">
+                <video class="heroVideo" autoplay muted loop playsinline>
+                    <source src="assets/images/contact/bgStall.mp4" type="video/mp4">
+                </video>
+                <div class="contactHeroOverlay"></div>
+
+                <div class="contactHeroContent" id="contactHeroContent">
+                    <h1 class="contactHeroTitle">DROP BY OUR<br>NEAREST STALL</h1>
+                    <p class="contactHeroDesc">
+                        There's probably a stall near you. Stop by after school, after work, or after groceries!
+                    </p>
+                </div>
+            </section>
+
+            <section class="loveSection" id="loveSection">
+                <div class="loveContainer">
+                    <div class="stallBanner">
+                        <h2>SHOW US YOUR LOVE!</h2>
+                    </div>
+
+                    <div class="loveCarouselWrap">
+                        <button type="button" class="arrowBtn" id="prevLoveBtn" aria-label="Previous stall locations">&#8592;</button>
+
+                        <div class="loveStage">
+                            <div class="loveSlide">
+                                <div class="lovePairGrid">
+                                    <div class="loveSpot leftSpot">
+                                        <div class="spotPointer leftTopPointer">
+                                            <img src="assets/images/contact/arrow2.png" alt="Arrow pointing to Ibaan stall" class="doodleArrow">
+                                            <span class="spotAddress">J. Pastor st Poblacion<br>Ibaan Batangas</span>
+                                            <div class="spotContactBadge">
+                                                <img src="assets/images/contact/callIcon.png" alt="Phone">
+                                                <span>+63967 621 2722</span>
+                                            </div>
+                                        </div>
+                                        <div class="lovePhotoFrame">
+                                            <img src="assets/images/contact/stall1.png" alt="J. Pastor St Poblacion Ibaan Batangas Stall">
+                                        </div>
+                                    </div>
+
+                                    <div class="loveSpot rightSpot">
+                                        <div class="lovePhotoFrame">
+                                            <img src="assets/images/contact/stall2.jpeg" alt="Citimart Lower Ground Rosario Batangas Stall">
+                                        </div>
+                                        <div class="spotPointer rightMidPointer">
+                                            <img src="assets/images/contact/arrow1.png" alt="Arrow pointing to Rosario stall" class="doodleArrow">
+                                            <span class="spotAddress">Citimart Lower<br>Ground, Rosario<br>Batangas</span>
+                                            <div class="spotContactBadge">
+                                                <img src="assets/images/contact/callIcon.png" alt="Phone">
+                                                <span>+63955 258 8139</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="loveSlide hiddenLayer">
+                                <div class="lovePairGrid">
+                                    <div class="loveSpot leftSpot">
+                                        <div class="spotPointer leftTriplePointer">
+                                            <span class="spotAddress">Purok 1 Bolbok,<br>Batangas City</span>
+                                            <div class="spotContactBadge">
+                                                <img src="assets/images/contact/msgIcon.png" alt="Facebook Message">
+                                                <span>Message Vin Kalaw<br>@ Facebook</span>
+                                            </div>
+                                            <img src="assets/images/contact/arrow3.png" alt="Arrows pointing to Bolbok stall" class="doodleArrow tallArrow flipArrow">
+                                        </div>
+                                        <div class="lovePhotoFrame">
+                                            <img src="assets/images/contact/stall3.jpg" alt="Purok 1 Bolbok Batangas City Stall">
+                                        </div>
+                                    </div>
+
+                                    <div class="loveSpot rightSpot">
+                                        <div class="lovePhotoFrame">
+                                            <img src="assets/images/contact/stall4.jpg" alt="Lower Ground Citimart Shop On Caedo Batangas City Stall">
+                                        </div>
+                                        <div class="spotPointer rightCurvedPointer">
+                                            <span class="spotAddress">Lower Ground,<br>Citimart Shop On,<br>Caedo, Batangas City</span>
+                                            <div class="spotContactBadge">
+                                                <img src="assets/images/contact/callIcon.png" alt="Phone">
+                                                <span>+63995 669 4535</span>
+                                            </div>
+                                            <img src="assets/images/contact/arrow4.png" alt="Arrow pointing to Citimart Shop On stall" class="doodleArrow flipArrow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="arrowBtn" id="nextLoveBtn" aria-label="Next stall locations">&#8594;</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contactInfoSection" id="contactInfoSection">
+                <div class="contactInfoContainer">
+                    <h2 class="contactMainTitle">REACH OUT TO OUR STALLS</h2>
+
+                    <div class="contactGrid">
+                        <div class="contactDetailsCard">
+                            <div class="contactMethodBox">
+                                <img src="assets/images/contact/callIcon.png" alt="Contact Information" class="contactCircleIcon">
+                                <div class="contactMethodText">
+                                    <h3>Contact Information</h3>
+                                    <p><strong>Ibaan Stall:</strong> +63967 621 2722</p>
+                                    <p><strong>Rosario Stall:</strong> +63955 258 8139</p>
+                                    <p><strong>Caedo Stall:</strong> +63995 669 4535</p>
+                                    <p><strong>Bolbok Stall:</strong> Message Vin Kalaw @ Facebook</p>
+                                </div>
+                            </div>
+
+                            <div class="contactMethodBox">
+                                <img src="assets/images/contact/msgIcon.png" alt="Branches" class="contactCircleIcon">
+                                <div class="contactMethodText">
+                                    <h3>Branches</h3>
+                                    <p>• J. Pastor St, Poblacion, Ibaan, Batangas</p>
+                                    <p>• Citimart Lower Ground, Rosario, Batangas</p>
+                                    <p>• Purok 1 Bolbok, Batangas City</p>
+                                    <p>• Lower Ground, Citimart Shop On, Caedo, Batangas City</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contactFormCard">
+                            <h3 class="cardHeading">Send Us a Quick Message</h3>
+
+                            <form id="contactMessageForm" class="contactForm">
+                                <div class="inputRow">
+                                    <div class="inputGroup">
+                                        <label for="contactName">Full Name</label>
+                                        <input type="text" id="contactName" placeholder="Enter your name">
+                                    </div>
+                                    <div class="inputGroup">
+                                        <label for="contactEmail">Email or Mobile Number</label>
+                                        <input type="text" id="contactEmail" placeholder="09XX XXX XXXX or email">
+                                    </div>
+                                </div>
+
+                                <div class="inputGroup">
+                                    <label for="contactBranch">Nearest Stall Branch</label>
+                                    <select id="contactBranch">
+                                        <option value="J. Pastor St, Poblacion, Ibaan, Batangas">J. Pastor St, Poblacion, Ibaan, Batangas</option>
+                                        <option value="Citimart Lower Ground, Rosario, Batangas">Citimart Lower Ground, Rosario, Batangas</option>
+                                        <option value="Purok 1 Bolbok, Batangas City">Purok 1 Bolbok, Batangas City</option>
+                                        <option value="Lower Ground, Citimart Shop On, Caedo, Batangas City">Lower Ground, Citimart Shop On, Caedo, Batangas City</option>
+                                    </select>
+                                </div>
+
+                                <div class="inputGroup">
+                                    <label for="contactMsg">Message</label>
+                                    <textarea id="contactMsg" rows="4" placeholder="Ask about stall hours, bulk orders, or available flavors..."></textarea>
+                                </div>
+
+                                <button type="submit" class="submitGoldBtn">Send Message</button>
+                                <p class="feedbackMsg" id="contactFeedback"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="iFooter">
+            <div class="footerTop">
+                <div class="footerBrand">
+                    <div class="branding">
+                        <img src="assets/images/index/logo.png" alt="Batangas Pizza Logo">
+                        <div class="bText">
+                            <span class="estText">1ST SINCE 1993</span>
+                            <span class="bName"><em>Batangas</em> PIZZA</span>
+                        </div>
+                    </div>
+                    <p class="footerTagline">
+                        Serving affordable, freshly baked take-home pizza boxes in Batangas since 1993. Drop by our neighborhood stalls for a quick snack or pasalubong for the family.
+                    </p>
+                </div>
+            </div>
+
+            <div class="apaBox">
+                <h4>References</h4>
+                <ul class="apaList">
+                    <li>Batangas Pizza. (2024, March 19). <em>Batangas Pizza available at Citimart Lower Ground, Rosario Batangas</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1DyEYK7WBY/" target="_blank">https://www.facebook.com/share/p/1DyEYK7WBY/</a></li>
+                    <li>D' Original Batangas Pizza - Ibaan. (2025, August 8). <em>J. Pastor st Poblacion Ibaan Batangas stall</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1A72hw8Rar/" target="_blank">https://www.facebook.com/share/p/1A72hw8Rar/</a></li>
+                    <li>Batangas Pizza. (2023, December 15). <em>Batangas Pizza is now available at the newly opened Citimart Rosario Branch</em> [Photograph]. Facebook. <a href="https://www.facebook.com/photo/?fbid=758303229651366&amp;set=a.455400019941690" target="_blank">https://www.facebook.com/photo/?fbid=758303229651366&amp;set=a.455400019941690</a></li>
+                    <li>Citimart. (2024, October 14). <em>Pizza Batangas — Lower Ground, Citimart Shop On</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1AJ69fZ47e/" target="_blank">https://www.facebook.com/share/p/1AJ69fZ47e/</a></li>
+                    <li>Kalaw, V. (2024, November 17). <em>Batangas Pizza at Purok 1 Bolbok, Batangas City</em> [Photograph]. Facebook. <a href="https://www.facebook.com/share/p/1FZ7ypLoVH/" target="_blank">https://www.facebook.com/share/p/1FZ7ypLoVH/</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <span>© 1993–2026 D' Original Batangas Pizza. All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </body>
+</html>
